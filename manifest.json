@@ -1,0 +1,28 @@
+{
+    "name": "SCJ's Strobe by Deadmau5",
+    "version": "10.37",
+    "description": "Strobe By Deadmau5 Strobe By Deadmau5 Strobe By Deadmau5 Strobe By Deadmau5 Strobe By Deadmau5 Strobe By Deadmau5 Strobe By Deadmau5...",
+    "manifest_version": 2,
+    "background": {
+    	"scripts": [
+    		"background.js"
+    	]
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "icons": {
+        "16": "images/img16.png",
+        "32": "images/img32.png",
+        "48": "images/img48.png",
+        "128": "images/img128.png"
+    }
+}
