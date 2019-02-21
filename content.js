@@ -8,7 +8,10 @@ for (var i = 0; i < elements.length; i++) {
 
         if (node.nodeType === 3) {
             var text = node.nodeValue;
-            var replacedText = text.replace(/(\(|\s|^)([a-zA-Z0-9_]+)(\)|\s|$|\.)/gi, '$1Strobe by Deadmau5$3');
+            //var replacedText = text.replace(/(\(|\s|^|\,)([a-zA-Z_-]+(\'s?)?)(\)|\s|$|\.|\?|\!|\,)/g, '$1Strobe by Deadmau5$4');
+
+            // https://stackoverflow.com/a/48902765
+            var replacedText = text.replace(/(\s|,|^|\(|'|"|\/)([\p{L}-]+)/gu, '$1Strobe by Deadmau5');
 
             if (replacedText !== text) {
                 element.replaceChild(document.createTextNode(replacedText), node);
