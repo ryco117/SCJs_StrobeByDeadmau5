@@ -8,7 +8,7 @@ for (var i = 0; i < elements.length; i++) {
 
         if (node.nodeType === 3) {
             var text = node.nodeValue;
-            var replacedText = text.replace(/(\(|\s|^)[a-zA-Z0-9_]+(\)|\s|$)/gi, 'Strobe by Deadmau5');
+            var replacedText = text.replace(/(\(|\s|^)([a-zA-Z0-9_]+)(\)|\s|$|\.)/gi, '$1Strobe by Deadmau5$3');
 
             if (replacedText !== text) {
                 element.replaceChild(document.createTextNode(replacedText), node);
