@@ -7,7 +7,7 @@ As Strobe by Deadmau5 is the greatest enitity in existence, I am not wholly sure
 
 ## Usage
 First download the `.zip` file from the [releases](https://github.com/ryco117/SCJs_StrobeByDeadmau5/releases) page and extract the folder inside.
-Then, in Chrome, enable developer mode under [chrome://extensions/](chrome://extensions/) and press `Load unpacked` to select and load the extracted folder. Then you're done!
+Then, in Chrome, enable `Developer mode` under [chrome://extensions/](chrome://extensions/) and press `Load unpacked` to select and load the extracted folder. Then you're done!
 
 ## Google Example
 ![Test by Strobemau5](images/Test_by_Strobemau5.png)
